@@ -1,12 +1,25 @@
 // JavaScript Looping Exercise
 
 // 1. Output each item in the following Array to your console:
+console.log("Question 1.");
 var livingRoom = ['couch', 'lamp', 'rug', 'shelf'];
-
+for(i= 3; i < livingRoom.length; i++) {
+console.log(livingRoom);
+}
 // 2. Using a loop, log numbers 22-33 in the console.
-
+console.log("Question 2.");
+var loopNum = 21;
+while (loopNum < 33) {
+  loopNum++;
+  console.log(loopNum);
+}
 // 3. Using a similar loop, log numbers 75 to 100, only in increments of five.
-
+console.log("Question 3");
+//var newLoop = 74;
+//while (newLoop < 100) {
+  //newLoop = newLoop + 5;
+//  console.log(newLoop);
+//}
 // 4. Write a while loop that logs "This is how a professional loops." to the console 5 times.
 //     Use this as an example:
 //        var counter = 0;
@@ -18,27 +31,72 @@ var livingRoom = ['couch', 'lamp', 'rug', 'shelf'];
 //        }
 
 //        console.log(counter);
-
+console.log("Question 4");
+ var counter = 1;
+ while (counter <= 5){
+   console.log("This is how a pro loops.");
+   counter++;
+ }
+//counter+=3 NOTES
 // 5. Write a conditional statement to find the largest of the numbers in the array provided.
-var largestNum = [-5, -2, -6, 0, -1]
+console.log("Question 5.");
+ var largestNum = [-5, -2, -6, 0, -1]
+ var largest = null;
 
+for (var i = 0; i < largestNum.length; i++) {
+  if (largestNum[i] = largest){
+    largest = largestNum[i];
+  }
+}
+console.log(largest);
 // 6. Separately, use both a for loop and while loop to do the same thing.
 //     Print out the sentence "At home, I have _____ cats." Use the number from your counter to fill in the number.
 //     The numbers should range from 10 to 100, in increments of 25.
-
+console.log("Question 6")
+var cats = 10;
+while (cats < 100) {
+   cats = cats+25;
+   console.log("At home, I have " + cats + " cats." );
+ }
+ var catArray = [5, 15, 26, 73, 88, 91, 94];
+ for (var i=0; i < catArray.length; i++) {
+   console.log("At home, I have " + catArray[i] + " cats." );
+}
 // 7. Given the following Array, console log 'Even' if the number is even, 'Even and greater than 10' if the
 //    number is even and greater than 10, and 'Odd' if the number is odd.
 //    HINT: Google 'remainder operator'
+console.log("Question 7.");
 var numArray = [2, 17, 9, 24, 8];
-
+for (var i=0; i < numArray.length; i++) {
+  if (numArray[i] % 2) {
+    console.log("Even");
+  }else if (numArray[i] > 10){
+    console.log("Odd");
+  }
+}
 // 8. Given the following Array, create variable primeArray with the value [2, 7, 17, 29, 41, 53, 67, 79, 97]
+console.log("Question 8.")
 var primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97,];
 var primeArray = [];
+for (i = 0; i < primes.length; i+=3) {
+    primeArray.push(primes[i]);
+  }
+console.log(primeArray);
 
 // 9. Prompt a user to pick either a number or a word. Create a script that alerts the user whether they chose a number or a word.
 // Hint: Google 'typeof'
-
+console.log("Question 9.");
+var choice = prompt("Choose a number or word");
+alert(choice);
+console.log(choice);
 // 10. Write a loop that outputs the following to the console:
+console.log("Question 10. Write a loop that outputs the following to the console:");
+//var hashtag = #
+//var counter = #;
+//while (counter <= 7){
+  //console.log(hashtag);
+  //counter++;
+//}
 // #
 // ##
 // ###
@@ -53,6 +111,51 @@ var primeArray = [];
 // randomly choose. You will use an alert to define the winner.
 
 // 11. Use a variable called "human" to prompt the user to type their choice.
+console.log("Quesitons 11-20")
+var human = prompt("Rock, Paper, Scissors! Pick one!");
+var choices = ["Rock", "Paper", "Scissors"];
+var computer = Math.floor(Math.random() * 100);
+console.log(computer);
+if (computer <= 0 || computer <= 33) {
+  var computer = "Rock";
+  console.log(computer);
+} else if (computer <= 34 || computer <= 66) {
+  var computer = "Paper";
+  console.log(computer);
+} else if (computer <= 67 || computer <= 100) {
+  var computer = "Scissors";
+  console.log(computer);
+}
+if (human === "Rock") {
+  if (computer === "Paper") {
+    console.log("Paper wins!");{
+      else if (computer === "Scissors") {
+        console.log("Rock Wins!");
+      } else if (human === "Paper") {
+        if (computer === "Rock"){
+          console.log("Paper Wins!");
+        } else if (computer === "Scissors") {
+          console.log("Scissors Wins!");
+        } else if (human = "Scissors") {
+          if (computer === "Rock") {
+            console.log("Rock Wins!");
+          } else if (computer === "Paper") {
+            console.log("Scissors");
+          }
+          }
+        }
+        }
+        }
+      }
+        }
+      }
+    }
+  }
+}
+}
+}
+}
+}
 // 12. Define an array called "choices" that consists of "paper", "rock", and "scissors".
 // 13. Define a variable called "computer" and use Math.random to allow the computer to randomly select a number.
 //    For reference:
