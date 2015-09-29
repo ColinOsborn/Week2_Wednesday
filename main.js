@@ -111,7 +111,7 @@ console.log("Question 10. Write a loop that outputs the following to the console
 // randomly choose. You will use an alert to define the winner.
 
 // 11. Use a variable called "human" to prompt the user to type their choice.
-console.log("Quesitons 11-20")
+console.log("Quesitons 11-18")
 var human = prompt("Rock, Paper, Scissors! Pick one!");
 var choices = ["Rock", "Paper", "Scissors"];
 var computer = Math.floor(Math.random() * 100);
@@ -173,6 +173,8 @@ if (human === 'rock') {
 // 17. Now inside of each condition, we need to compare the "human" variable to the "computer" variable,
 //    then print to the console who won the game.
 // 18. Give yourself a high five for completing your first javascript game!
+console.log("Question 19");
+
 // 19. Use the game you made above and rework it using a switch statement.
 // 20. What happens if your user enters something other than "rock", "paper", or "scissors?". Change your default case
 //     to print a snarky message to the console if the input doesn't match any of the options.
@@ -195,6 +197,8 @@ if (human === 'rock') {
 
 
 // CHESS BOARD
+console.log("Chess Board");
+
 // 24. Write a program that creates a string that represents an 8×8 grid, using newline characters to separate lines.
 // At each position of the grid there is either a space or a “#” character. The characters should form a chess board.
 
@@ -214,6 +218,7 @@ if (human === 'rock') {
 
 
 // THAR BE DACHSHUNDS
+console.log("dachshunds");
 // We're going to slay some badass dachshunds.
 // 25. Start by using the following variables:
 var slaying = true;
@@ -233,3 +238,21 @@ var totalDamage = 0;
 //     If the totalDamage is less than 4, set the youHit variable to the same expression we used at the top.
 //     This will begin the loop again.
 // 30. Play until you win!
+
+while (slaying) {
+  slaying = false;
+  if (youHit ===1) {
+    youHit = Math.floor(Math.random() * 2);
+    console.log("You hit the dachshund!");
+    totalDamage = totalDamage + damageThisRound;
+    if (totalDamage >= 4) {
+      console.log("You killed the Dog!");
+      slaying = true;
+    } else if (totalDamage < 4) {
+      youHit = Math.floor(Math.random() * 2);
+      console.log("You lost! The Dog won!");
+      slaying = false;
+    }
+    }
+  }
+}
