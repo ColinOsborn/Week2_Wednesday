@@ -126,35 +126,27 @@ if (computer <= 0 || computer <= 33) {
   var computer = "Scissors";
   console.log(computer);
 }
-if (human === "Rock") {
-  if (computer === "Paper") {
-    console.log("Paper wins!");{
-      else if (computer === "Scissors") {
-        console.log("Rock Wins!");
-      } else if (human === "Paper") {
-        if (computer === "Rock"){
-          console.log("Paper Wins!");
-        } else if (computer === "Scissors") {
-          console.log("Scissors Wins!");
-        } else if (human = "Scissors") {
-          if (computer === "Rock") {
-            console.log("Rock Wins!");
-          } else if (computer === "Paper") {
-            console.log("Scissors");
-          }
-          }
+/// if(computer === human)
+if (human === 'rock') {
+    if (computer === 'paper') {
+        console.log('paper wins');
+    } else if (computer === 'scissors') {
+        console.log('rock wins');
+    } else if (human === 'paper') {
+        if (computer === 'rock') {
+            cosole.log('paper wins');
+        } else if (computer === 'scissors') {
+            console.log('scissors win');
+        } else if (human === 'scissors') {
+            if (computer === 'rock') {
+                console.log('rock wins');
+            } else if (computer === 'paper') {
+                console.log('scissors wins');
+            } else if (computer === human) {
+              console.log("It's a tie");
+            }
         }
-        }
-        }
-      }
-        }
-      }
     }
-  }
-}
-}
-}
-}
 }
 // 12. Define an array called "choices" that consists of "paper", "rock", and "scissors".
 // 13. Define a variable called "computer" and use Math.random to allow the computer to randomly select a number.
